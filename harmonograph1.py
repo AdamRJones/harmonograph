@@ -53,7 +53,7 @@ D2=.2
 dt=.01
 t=0
 
-for i in range(1,500):
+for i in range(1,1000):
     t=t+dt
     x=A1*m.sin(t*F1+P1)*m.e**(-D1*t)
     y=A2*m.sin(t*F2+P2)*m.e**(-D2*t)
