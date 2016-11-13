@@ -13,8 +13,9 @@ import turtle as graph
 import math as m
 
 
+## turtle basics
 ##
-## make turtle go fast
+## make turtle go fast by turning off tracing
 ##t.tracer(0,0)
 ##
 ##for x in range(500):
@@ -38,6 +39,17 @@ import math as m
 ##    f = 1/p
 ##    print (length,p,f)
 
+### sin function
+###
+##steps = 1000
+##dx = .1
+##x=0
+##amplitude = 100
+##for i in range (0,steps):
+##    x = x + dx
+##    y = amplitude*m.sin(x)
+##    #print (x,y)
+##    graph.setpos (x*10,y)
 
 # harmonograph
 
@@ -52,7 +64,7 @@ p1=0
 d1=.2
 
 # y pendulum
-a2=400
+a2=350
 f2=5
 p2=m.pi/4
 d2=.2
