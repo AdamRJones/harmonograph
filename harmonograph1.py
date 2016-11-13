@@ -40,21 +40,29 @@ import math as m
 
 
 # harmonograph
-A1=56
-F1=5
-P1=0
-D1=.2
 
-A2=73
-F2=5
-P2=m.pi/4
-D2=.2
+# pendulum formula: amplitude *
+#                   sin(time*frequency + phase_offset) *
+#                   e**(-time*damping_constant)
 
+# x pendulum
+a1=56
+f1=5
+p1=0
+d1=.2
+
+# y pendulum
+a2=73
+f2=5
+p2=m.pi/4
+d2=.2
+
+# time and delta
 dt=.01
 t=0
 
 for i in range(1,1000):
     t=t+dt
-    x=A1*m.sin(t*F1+P1)*m.e**(-D1*t)
-    y=A2*m.sin(t*F2+P2)*m.e**(-D2*t)
+    x=a1*m.sin(t*f1+P1)*m.e**(-d1*t)
+    y=a1*m.sin(t*f2+P2)*m.e**(-d2*t)
     graph.setpos(x,y)
