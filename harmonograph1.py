@@ -46,13 +46,13 @@ import math as m
 #                   e**(-time*damping_constant)
 
 # x pendulum
-a1=56
+a1=300
 f1=5
 p1=0
 d1=.2
 
 # y pendulum
-a2=73
+a2=400
 f2=5
 p2=m.pi/4
 d2=.2
@@ -61,8 +61,8 @@ d2=.2
 dt=.01
 t=0
 
-for i in range(1,1000):
+for i in range(1,2000):
     t=t+dt
-    x=a1*m.sin(t*f1+P1)*m.e**(-d1*t)
-    y=a1*m.sin(t*f2+P2)*m.e**(-d2*t)
+    x=a1*m.sin(t*f1+p1)*m.e**(-d1*t)
+    y=a1*m.sin(t*f2+p2)*m.e**(-d2*t)
     graph.setpos(x,y)
