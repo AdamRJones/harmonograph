@@ -12,6 +12,10 @@
 import turtle as graph
 import math as m
 
+# pendulum formula: amplitude *
+#                   sin(time*frequency + phase_offset) *
+#                   e**(-time*damping_constant)
+
 def posn (time,amplitude,frequency,phase,decay):
     return amplitude* \
            m.sin(time*frequency+phase)* \
@@ -57,9 +61,7 @@ def posn (time,amplitude,frequency,phase,decay):
 
 # harmonograph
 
-# pendulum formula: amplitude *
-#                   sin(time*frequency + phase_offset) *
-#                   e**(-time*damping_constant)
+
 
 ### x pendulum
 ##a1=200
@@ -87,7 +89,7 @@ def posn (time,amplitude,frequency,phase,decay):
 
 # x pendulum
 a1=200
-f1=3.1
+f1=3.10
 p1=0
 d1=.04
 
@@ -99,7 +101,7 @@ d2=.04
 
 # gx - gimbal x
 a3=0
-f3=3
+f3=3.15
 p3=0
 d3=.004
 
